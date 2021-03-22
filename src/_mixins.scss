@@ -1,0 +1,8 @@
+@mixin backImage($image, $height: 70px) {
+    background: url($image);
+    background-repeat: repeat-x;
+    background-color: $yellow;
+    margin: 0;
+    height: $height;
+
+}

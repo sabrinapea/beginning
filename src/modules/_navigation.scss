@@ -1,0 +1,55 @@
+
+body {
+    font-family: $font-body;
+    font-size: 1em;
+    line-height:2em;
+    @include backImage('../images/bg.gif');
+    color: #FFF repeat-x;
+    margin:0;
+    color: $yellow;
+
+}
+main {
+    width:940px;
+    margin:0 auto;
+    padding:0 10px;
+
+}
+figure {
+    width:400px;
+    height:190px;
+    float:left;
+    display:block;
+    margin:0;
+    @include backImage('../images/logo.png', no-repeat, 0, 50);
+
+}
+nav {
+    .navbar {
+        width:540px;
+        height:190px;
+        float:left;
+        text-align:right;
+    }
+    ul {
+        list-style-type:none;
+        margin-top:95px;
+    }
+    ul li {
+        @include break(760px) {
+            display:inline;
+            font-size:0.8em;
+            margin-right:10px;
+        }
+    }
+    ul li a {
+        display:inline;
+        font-size:0.8em;
+        margin-right:10px;
+        color:$orange;
+
+        &:hover {
+            color:$yellow;
+        }
+    }
+}
